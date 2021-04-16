@@ -1,0 +1,23 @@
+<form [formGroup]="profileForm">
+  
+    <label>
+    Title:
+      <input type="text" formControlName="title">
+    </label>
+<br>
+    <label>
+       imageUrl:
+          <input type="text" formControlName="imageUrl">
+        </label>
+  <br>
+    <label>
+    description:
+      <input type="text" formControlName="description">
+    </label>
+  
+  </form>
+
+ <p>
+  <button (click)="addproduct()" [disabled]="!profileForm.valid" >Submit</button>
+</p>
+<p>{{profileForm.value.firstName}}</p>
