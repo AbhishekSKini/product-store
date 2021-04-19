@@ -40,17 +40,11 @@ getproduct(){
 }
 
   addproduct(){
-    if (this.profileForm.valid) {
-     alert("Form Submitted!");
-     
-    }
+    
     console.log(this.profileForm.value);
     this.ps.postproduct(this.profileForm.value);
-    let currentUrl = this.router.url;
-// this.router.navigateByUrl('/',{skipLocationChange: true}).then(() => {
-//   this.router.navigate([currentUrl]);
-  
-// });
+    
+    alert("Form Submitted!");
     this.router.navigate(['/']);
  
     
