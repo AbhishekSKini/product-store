@@ -43,7 +43,6 @@ getproduct(){
     
     console.log(this.profileForm.value);
     this.ps.postproduct(this.profileForm.value);
-    
     alert("Form Submitted!");
     this.router.navigate(['/']);
  
